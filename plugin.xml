@@ -2,16 +2,16 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	id="cordova-plugin-facebookads"
-	version="4.7.4">
+	id="cordova-plugin-facebook-ads"
+	version="4.22.0">
       
     <name>FacebookAds</name>
 	<description>Cordova/PhoneGap Plugin for Facebook AudienceNetwork Ads</description>
-	<author>Liming Xie</author>
+	<author>Liming Xie + Andy Epifani</author>
 	<license>MIT</license>
-	<keywords>rjfun,ad,admob,iad,mopub,facebook,audience</keywords>
-    <repo>https://github.com/floatinghotpot/cordova-plugin-facebookads.git</repo>
-    <issue>https://github.com/floatinghotpot/cordova-plugin-facebookads/issues</issue>
+	<keywords>ad,admob,iad,mopub,facebook,audience</keywords>
+    <repo>https://github.com/TearDesign/cordova-plugin-facebook-ads.git</repo>
+    <issue>https://github.com/TearDesign/cordova-plugin-facebook-ads/issues</issue>
 
 	<engines>
 	    <engine name="cordova" version=">=3.0" />
@@ -22,7 +22,7 @@
     </js-module>
 
 	<dependency id="cordova-plugin-extension"/>
-	<dependency id="cordova-facebook-audnet-sdk"/>
+	<dependency id="cordova-facebook-audience-network"/>
 
     <!-- android -->
     <platform name="android">
@@ -43,6 +43,7 @@
         </config-file>
           
         <framework src="com.android.support:support-v4:+" />
+        <framework src="com.android.support:recyclerview-v7:+" />
      </platform>
      
      <!-- ios -->
