@@ -355,7 +355,7 @@ public class FacebookAdPlugin extends GenericAdPlugin {
                         unit.tracking.setTop(unit.y);
                         unit.tracking.setRight(unit.x + unit.w);
                         unit.tracking.setBottom(unit.y + unit.h);
-                        unit.tracking.setBackgroundColor(Color.RED);
+                        //unit.tracking.setBackgroundColor(Color.RED);
                     }
                 }
             });
