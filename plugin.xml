@@ -22,7 +22,7 @@
     </js-module>
 
 	<dependency id="cordova-plugin-extension"/>
-	<dependency id="cordova-facebook-audience-network"/>
+
 
     <!-- android -->
     <platform name="android">
@@ -31,7 +31,7 @@
                 <param name="android-package" value="com.rjfun.cordova.facebookads.FacebookAdPlugin"/>
             </feature>
         </config-file>
-        <source-file src="src/android/FacebookAdPlugin.java" target-dir="src/com/rjfun/cordova/facebookads" />
+        <source-file src="src/android/FacebookAdPlugin.java" target-dir="app/src/com/rjfun/cordova/facebookads" />
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
 			<activity android:name="com.facebook.ads.InterstitialAdActivity"
@@ -42,29 +42,7 @@
 			  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
         </config-file>
 
-        <framework src="com.android.support:support-v4:+" />
-        <framework src="com.android.support:recyclerview-v7:+" />
      </platform>
 
-     <!-- ios -->
-     <platform name="ios">
-         <config-file target="config.xml" parent="/*">
-             <feature name="FacebookAds">
-                 <param name="ios-package" value="FacebookAdPlugin" />
-             </feature>
-         </config-file>
-         <header-file src="src/ios/FacebookAdPlugin.h" />
-         <source-file src="src/ios/FacebookAdPlugin.m" />
-         <header-file src="src/ios/UITapGestureRecognizer+Spec.h" />
-         <source-file src="src/ios/UITapGestureRecognizer+Spec.m" />
-
-        <framework src="AdSupport.framework"/>
-        <framework src="StoreKit.framework"/>
-        <framework src="CoreMotion.framework"/>
-        <framework src="CoreImage.framework"/>
-        <framework src="QuartzCore.framework"/>
-        <framework src="OpenGLES.framework"/>
-        <framework src="Security.framework"/>
-    </platform>
-
+    
 </plugin>
